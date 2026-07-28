@@ -29,8 +29,6 @@ public class OrderApp {
 				
 				total += subtotal;
 			}
-		
-		
 			System.out.println("合計金額："+total+"円");
 
 	}
