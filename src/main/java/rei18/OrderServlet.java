@@ -14,14 +14,14 @@ import jakarta.servlet.http.HttpSession;
 /**
  * Servlet implementation class OrderSurvlet
  */
-@WebServlet("/OrderSurvlet")
-public class OrderSurvlet extends HttpServlet {
+@WebServlet("/OrderServlet")
+public class OrderServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public OrderSurvlet() {
+    public OrderServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -64,7 +64,7 @@ public class OrderSurvlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		RequestDispatcher rd = app.getRequestDispatcher("/jsp/response.jsp");
+		RequestDispatcher rd = app.getRequestDispatcher("/jsp/response1.jsp");
 		rd.forward(request, response);
 	}
 }
